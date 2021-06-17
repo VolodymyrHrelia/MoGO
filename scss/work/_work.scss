@@ -1,0 +1,41 @@
+.work {
+   
+    
+    width:100%;
+    display: flex;
+    margin-bottom: 60px;
+    img{
+        width: 100%;
+        display: block;
+    }
+ 
+}
+.work__half {
+    flex-basis: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.work__quarter {
+    display: flex;
+    flex-direction: column;
+    flex-basis:50%;
+}
+
+// .work__quarter{
+//     display: flex;
+//     flex-direction: column;
+
+// }
+
+
+.work__photo {
+    flex-basis: 50%;
+    flex-shrink: 1;
+    
+    
+}
+.work__mod {
+}
+.work__icon {
+}

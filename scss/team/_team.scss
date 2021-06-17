@@ -1,0 +1,139 @@
+.team__block {
+    display: flex;
+    width:100%;
+    @media (max-width:600px) {
+        flex-direction: column;
+    }
+
+   
+
+}
+.team__item {
+    flex-basis: 33.333%;
+    margin-right: 30px;
+    text-align: center;
+    &:last-child {
+        margin-right: 0;
+    }
+
+    h3 {
+        margin: 20px 0 5px 0;
+        font-family: 'Montserrat';
+        font-size: 14px;
+        line-height: 1.2;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #333333;
+    }
+    p {
+        font-family: 'Roboto';
+        font-size: 15px;
+        line-height: 24px;
+        font-weight: 300;
+        font-style: italic;
+        color: #999999;
+    }
+
+    @media (max-width:600px) {
+        margin-right: 0px;
+        margin-bottom:50px ;
+    }
+
+
+}
+.team__photo {
+    transition: transform .3s linear;
+    
+    position: relative;
+    img {
+        display: block;
+        width:100%;
+    }
+    &:hover {
+        transform: translate(-10px,-10px);
+        box-shadow: 10px 10px 0 0 #95e1d3;
+        .photo__mod {
+            opacity: 1;
+        }
+    }
+
+}
+
+
+
+
+
+.photo__mod {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(0.0deg, rgba(252,227,138,0.89) 0%, rgba(243,129,129,0.89) 100%);
+    transition: display .5 linear;
+    display: block;
+    transition: opacity 0.2s linear;
+    opacity: 0;
+
+}
+
+
+
+.photo__icon-block {
+    display: flex;
+    position: absolute;
+    left:50%;
+    top: 50%;
+
+
+    transform: translate(-50%);
+    
+    background-color: #f8dd7b;
+}
+.photo__icon {
+    flex-basis: 25%;
+    padding: 15px 15px;
+    font-size: 40px;
+    
+    border-right:1px solid #f9c687; 
+    a {
+        color: #f38181;
+    }
+    &:nth-child(odd) {
+        padding: 15px 20px;
+    }
+
+    &:hover {
+        background-color:#f38181;
+        a{
+            color:#fff;
+        }
+    }
+
+
+}
+
+
+// LOGO
+
+.logotype {
+    width: 100%;
+    background-color: #f8f8f8;
+    margin-top: 120px;
+    margin-left: 0;
+    border-top: 1px solid #95e1d3;
+    border-bottom: 1px solid #95e1d3;
+    padding: 50px 0;
+    @media (max-width:700px) {
+        padding: 20px 0;
+        margin-top: 60px;
+    }
+
+}
+.logotype__container {
+    padding-left: 0;
+    padding-right: 0;
+    img {
+        width: 100%;
+    }
+}

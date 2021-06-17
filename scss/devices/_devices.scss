@@ -1,0 +1,32 @@
+.devices {
+    width:100%;
+    background-image:linear-gradient( rgba(255,255,255,0.5)), url(/img/devices/background.png);
+    background-position: center;
+    background-size: cover;
+    padding-top:1px;
+    
+}
+
+.decices__tab {
+    position: relative;
+    margin:0 0 0 21%;
+    display:block;
+    width:50%;
+    img {
+        display: block;
+        width:100%;
+    }
+    
+
+}
+.decices__phone {
+    display: inline-block;
+    position: absolute;
+    right:0;
+    bottom: 0;
+    width:50%;
+    transform: translate(57%,19%);
+    img {
+        width:100%;
+    }
+}
